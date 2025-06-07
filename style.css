@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+}
+
+#map {
+    height:93%;
+    width: 100%;
+}
+
+/* header section */
+.header{
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.combobox{
+    width: 78%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+}
+.province{
+    width: 21%;
+    padding: 12px;
+}
+select{
+    width: 140px;
+    height: 28px;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+.networkType{
+    width: 79%;
+    border-left: 2px dashed brown;
+    border-right: 2px dashed brown;
+    padding: 12px;
+    padding-left: 25px;
+}
+.headerButton{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    align-items: center;
+}
+button{
+    width: 100px;
+    height: 30px;
+    margin: 0px 3px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: #F5F5F5;
+}
+
+/* dataform */
+#dataForm{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    z-index: 1000;
+    width: 320px;
+    height: 480px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(119, 119, 119, 0.782);
+    box-shadow: 0px 0px 10px rgba(119, 119, 119, 0.782); 
+    border-radius: 20px;
+}
+.toolForm{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    
+}
+.toolForm h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.toolForm input{
+    height: 25px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+    padding-top: 15px;
+    margin-bottom: 8px;
+}
+.toolForm input:focus { outline: none; }
+#submitButton{
+    width: 110px;
+    height: 40px;
+    color: white;
+    background-color: gray;
+    font-size: 15px;
+    margin-top: 15px;
+    align-self: center;
+    border-radius: 30px;
+    border: none;
+    background-color: 0E46A3;
+    backdrop-filter: blur(4px);
+}
+#submitButton:hover{
+    transform: scale(1.05);
+    background-color: rgba(185, 185, 185, 0.723);
+    color: black; 
+}
+.toolbar span{
+   margin-right: 5px;
+   font-size: 15px;
+}
+
+#PVTool,#BatteryTool span{
+    font-size: 16px;
+    
+}
+
+.distance-label {
+    font-size: 14px;
+    font-weight: bold;
+    color:  black;
+    background: none;
+    padding: 4px;
+    display: inline-block;
+}
+#saveButton{
+     width: 110px;
+    height: 40px;
+    color: white;
+    background-color: gray;
+    font-size: 15px;
+    margin-top: 15px;
+    align-self: center;
+    border-radius: 30px;
+    border: none;
+    background-color: 0E46A3;
+    backdrop-filter: blur(4px);
+}
+#saveButton:hover{
+    transform: scale(1.05);
+    background-color: rgba(185, 185, 185, 0.723);
+    color: black; 
+}
